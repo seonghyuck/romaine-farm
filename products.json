@@ -1,0 +1,24 @@
+[
+    {
+      "id": "romaine",
+      "name": "통로메인 2kg",
+      "price": 8000,
+      "desc": "신선하고 아삭한 통로메인",
+      "image": "/images/romaine.png"
+    },
+    {
+      "id": "kale",
+      "name": "케일 2kg",
+      "price": 8000,
+      "desc": "비타민 가득 건강한 케일",
+      "image": "/images/kale.png"
+    },
+    {
+        "id": "lettuce",
+        "name": "포기상추 4kg",
+        "price": 12000,
+        "desc": "수분 가득! 쌈채소로 딱 좋은 포기상추",
+        "image": "/images/lettuce.png"
+    }      
+  ]
+  

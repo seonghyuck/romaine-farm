@@ -1,0 +1,240 @@
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-family: 'Apple SD Gothic Neo', 'Arial', sans-serif;
+  background-color: #fffef8;
+  color: #2e2e2e;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #2e8b57, #4caf50);
+  padding: 20px 40px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.farm-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.farm-slogan {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 100%;
+  background: white;
+  margin-top: 5px;
+}
+
+/* 메인 히어로 영역 */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f6fff6;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.cta-button:hover {
+  background-color: #26794a;
+}
+
+.hero img {
+  width: 300px;
+  margin-top: 30px;
+  border-radius: 12px;
+}
+
+/* 상품 리스트 영역 */
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.product-card {
+  width: 250px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.product-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.product-button:hover {
+  background-color: #26794a;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .hero img {
+    width: 80%;
+  }
+}
+
+.product-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2e8b57;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  z-index: 999;
+}
+
+.floating-button:hover {
+  background-color: #26794a;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.order-form input,
+.order-form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.order-form button {
+  background-color: #2e8b57;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background-color: #26794a;
+}
+
+.order-form select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
